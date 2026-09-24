@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>NK RTO Services | Admin Dashboard</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #071426;
+      color: #ffffff;
+      min-height: 100vh;
+    }
+
+    .header {
+      background: #061a35;
+      padding: 18px 20px;
+      border-bottom: 1px solid #24415f;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .brand {
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    .brand span {
+      color: #35c47a;
+    }
+
+    .admin-label {
+      font-size: 13px;
+      color: #b8c5d3;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 25px 18px;
+    }
+
+    .welcome {
+      margin-bottom: 25px;
+    }
+
+    .welcome h1 {
+      font-size: 28px;
+      margin-bottom: 7px;
+    }
+
+    .welcome p {
+      color: #aebdcb;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      margin-bottom: 28px;
+    }
+
+    .card {
+      background: #0d223b;
+      border: 1px solid #25435f;
+      border-radius: 14px;
+      padding: 20px;
+    }
+
+    .card .icon {
+      font-size: 28px;
+      margin-bottom: 12px;
+    }
+
+    .card h3 {
+      font-size: 14px;
+      color: #aebdcb;
+      margin-bottom: 8px;
+    }
+
+    .number {
+      font-size: 30px;
+      font-weight: 700;
+    }
+
+    .section {
+      background: #0d223b;
+      border: 1px solid #25435f;
+      border-radius: 14px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .section h2 {
+      font-size: 20px;
+      margin-bottom: 18px;
+    }
+
+    .actions {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+    }
+
+    .action {
+      display: block;
+      text-decoration: none;
+      color: white;
+      background: #123252;
+      border: 1px solid #315474;
+      padding: 16px;
+      border-radius: 10px;
+      text-align: center;
+      font-weight: 600;
+    }
+
+    .action:hover {
+      background: #174467;
+    }
+
+    .green {
+      background: #12623d;
+      border-color: #27865b;
+    }
+
+    .green:hover {
+      background: #16804e;
+    }
+
+    .appointment {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px;
+      background: #091b2e;
+      border-radius: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #203c56;
+    }
+
+    .appointment strong {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .appointment small {
+      color: #9fb0c0;
+    }
+
+    .status {
+      padding: 7px 12px;
+      border-radius: 20px;
+      background: #174f35;
+      color: #72e0a8;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 25px;
+      color: #7f91a4;
+      font-size: 13px;
+    }
+
+    @media (max-width: 800px) {
+      .cards {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .actions {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      .header {
+        padding: 15px;
+      }
+
+      .welcome h1 {
+        font-size: 23px;
+      }
+
+      .appointment {
+        display: block;
+      }
+
+      .status {
+        display: inline-block;
+        margin-top: 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="brand">
+      NK <span>RTO Services</span>
+    </div>
+
+    <div class="admin-label">
+      ADMIN DASHBOARD
+    </div>
+  </header>
+
+  <main class="container">
+
+    <div class="welcome">
+      <h1>Welcome to Admin Dashboard</h1>
+      <p>Manage NK RTO Services enquiries, appointments and customer requests.</p>
+    </div>
+
+    <!-- Dashboard Statistics -->
+    <div class="cards">
+
+      <div class="card">
+        <div class="icon">📩</div>
+        <h3>New Enquiries</h3>
+        <div class="number">0</div>
+      </div>
+
+      <div class="card">
+        <div class="icon">📅</div>
+        <h3>Appointments</h3>
+        <div class="number">0</div>
+      </div>
+
+      <div class="card">
+        <div class="icon">🚗</div>
+        <h3>Service Requests</h3>
+        <div class="number">0</div>
+      </div>
+
+      <div class="card">
+        <div class="icon">🌎</div>
+        <h3>International Requests</h3>
+        <div class="number">0</div>
+      </div>
+
+    </div>
+
+    <!-- Quick Actions -->
+    <section class="section">
+
+      <h2>Quick Actions</h2>
+
+      <div class="actions">
+
+        <a
+          class="action green"
+          href="https://wa.me/917069452259"
+          target="_blank"
+          rel="noopener">
+          📱 Open WhatsApp
+        </a>
+
+        <a
+          class="action"
+          href="tel:+917069452259">
+          📞 Call Office
+        </a>
+
+        <a
+          class="action"
+          href="mailto:khangwaln@gmail.com">
+          📧 Open Email
+        </a>
+
+      </div>
+
+    </section>
+
+    <!-- Services -->
+    <section class="section">
+
+      <h2>RTO Services</h2>
+
+      <div class="actions">
+
+        <a class="action" href="../nk-rto-services/">
+          🚘 New Driving Licence
+        </a>
+
+        <a class="action" href="../nk-rto-services/">
+          🔄 Licence Renewal
+        </a>
+
+        <a class="action" href="../nk-rto-services/">
+          📝 Learning Application
+        </a>
+
+        <a class="action" href="../nk-rto-services/">
+          ➕ Add Endorsement
+        </a>
+
+        <a class="action" href="../nk-rto-services/">
+          🔁 Driving Licence Retest
+        </a>
+
+        <a class="action" href="../nk-rto-services/">
+          🌍 International Driving Permit
+        </a>
+
+      </div>
+
+    </section>
+
+    <!-- Recent Requests -->
+    <section class="section">
+
+      <h2>Recent Requests</h2>
+
+      <div class="appointment">
+
+        <div>
+          <strong>No requests yet</strong>
+          <small>New customer requests will appear here after the enquiry system is connected.</small>
+        </div>
+
+        <span class="status">
+          READY
+        </span>
+
+      </div>
+
+    </section>
+
+    <!-- Office Information -->
+    <section class="section">
+
+      <h2>Office Information</h2>
+
+      <div class="appointment">
+        <div>
+          <strong>NK RTO Services</strong>
+          <small>
+            Gandhidham, Gujarat 370240
+          </small>
+        </div>
+      </div>
+
+      <div class="appointment">
+        <div>
+          <strong>Office Timing</strong>
+          <small>
+            11:00 AM – 9:00 PM
+          </small>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    © 2026 NK RTO Services. Admin Dashboard.
+  </footer>
+
+</body>
+</html>
