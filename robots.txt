@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://YOUR-GITHUB-USERNAME.github.io/sitemap.xml
+Sitemap: https://samuelmassey709-maker.github.io/nk-rto-services/sitemap.xml
