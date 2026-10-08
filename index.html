@@ -22,6 +22,21 @@
   <meta property="og:site_name" content="NK RTO Services">
   <meta name="twitter:card" content="summary">
 
+  <!-- Small layout fixes on top of style.css -->
+  <style>
+    /* "Not sure" card spans two columns so the last row is full */
+    .cta-card{grid-column:span 2;background:#eaf7f0;border-color:#d7eadf}
+    .cta-card p{min-height:0}
+    .cta-card .btn{margin-top:auto;align-self:flex-start}
+    @media (max-width:900px){.cta-card{grid-column:span 2}}
+    @media (max-width:560px){
+      .cta-card{grid-column:auto}
+      /* Keep the floating WhatsApp button from covering the last content */
+      body{padding-bottom:70px}
+      .floating-wa{right:12px;bottom:12px;padding:10px 14px;font-size:13px}
+    }
+  </style>
+
   <!-- LocalBusiness SEO Schema -->
   <script type="application/ld+json">
   {
@@ -41,6 +56,31 @@
     },
     "openingHours": "Mo-Su 11:00-21:00",
     "hasMap": "https://share.google/nei4JFxTR4o9WKtnQ"
+  }
+  </script>
+
+  <!-- FAQ SEO Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Which RTO services do you provide?",
+        "acceptedAnswer": {"@type": "Answer", "text": "We provide assistance and guidance for driving licence and selected RTO documentation services listed on this website."}
+      },
+      {
+        "@type": "Question",
+        "name": "What documents will I need?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Requirements vary by service and applicant. Contact us with your exact requirement so we can guide you on the applicable document checklist."}
+      },
+      {
+        "@type": "Question",
+        "name": "Are government fees included in your service charges?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Any applicable official fees and our service charges should be confirmed before proceeding. We do not display unverified fee claims on this website."}
+      }
+    ]
   }
   </script>
 </head>
@@ -131,6 +171,12 @@
         <article class="card" id="duplicate"><span class="icon" aria-hidden="true">📋</span><h3>Duplicate Driving Licence</h3><p>Guidance for replacing a lost or damaged driving licence.</p><a href="#contact">Get Assistance →</a></article>
         <article class="card" id="learning-application"><span class="icon" aria-hidden="true">📘</span><h3>Learning Application</h3><p>Assistance with learning licence application.</p><a href="#contact">Get Assistance →</a></article>
         <article class="card" id="endorsement"><span class="icon" aria-hidden="true">🚛</span><h3>Add Endorsement</h3><p>Heavy vehicle and transport endorsement assistance.</p><a href="#contact">Get Assistance →</a></article>
+        <article class="card cta-card">
+          <span class="icon" aria-hidden="true">💬</span>
+          <h3>Not sure which service you need?</h3>
+          <p>Tell us your situation on WhatsApp and we will guide you to the right service.</p>
+          <a class="btn btn-primary" href="https://wa.me/917069452259?text=Hello%20NK%20RTO%20Services%2C%20I%20am%20not%20sure%20which%20service%20I%20need." target="_blank" rel="noopener">WhatsApp Us</a>
+        </article>
       </div>
     </div>
   </section>
@@ -263,8 +309,8 @@
     });
 
     // Mobile-friendly dropdown (hover does not work on touch screens)
-    const dropBtn = document.querySelector('.nav-dropdown > button');
     const dropdown = document.querySelector('.nav-dropdown');
+    const dropBtn = dropdown.querySelector('button');
     dropBtn.addEventListener('click', () => {
       const open = dropdown.classList.toggle('open');
       dropBtn.setAttribute('aria-expanded', String(open));
