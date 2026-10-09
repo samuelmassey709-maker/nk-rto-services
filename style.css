@@ -1,334 +1,160 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>NK RTO Services Gandhidham | Driving Licence & RTO Assistance</title>
-  <meta name="description" content="NK RTO Services in Gandhidham, Gujarat provides assistance for driving licence applications, renewals, revalidation, corrections, international driving permits and other RTO documentation services.">
-  <meta name="robots" content="index, follow">
-  <meta name="theme-color" content="#061a35">
-  <link rel="canonical" href="https://samuelmassey709-maker.github.io/nk-rto-services/">
-  <link rel="icon" type="image/png" href="assets/nk-rto-circular-logo.png">
-  <link rel="stylesheet" href="style.css">
-  <meta name="google-site-verification" content="TuHi1AUaf_e6mBGuSEscNie9r24Yye5WXCcw0gKPIq0">
+ *{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#102039;background:#fff;line-height:1.6}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;height:auto}
+:focus-visible{outline:3px solid #13a85c;outline-offset:3px;border-radius:6px}
+.skip-link{position:absolute;left:-9999px;top:10px;background:#078244;color:#fff;padding:10px 16px;border-radius:8px;z-index:100}
+.skip-link:focus{left:10px}
+.container{width:min(1160px,92%);margin:auto}
 
-  <!-- Open Graph SEO -->
-  <meta name="author" content="NK RTO Services">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="NK RTO Services Gandhidham | Driving Licence & RTO Assistance">
-  <meta property="og:description" content="Driving licence and RTO service assistance from NK RTO Services, Gandhidham, Gujarat.">
-  <meta property="og:url" content="https://samuelmassey709-maker.github.io/nk-rto-services/">
-  <meta property="og:image" content="https://samuelmassey709-maker.github.io/nk-rto-services/assets/nk-rto-circular-logo.png">
-  <meta property="og:site_name" content="NK RTO Services">
-  <meta name="twitter:card" content="summary">
+/* Header */
+.site-header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdrop-filter:blur(14px);border-bottom:1px solid #e7edf3}
+.nav-wrap{height:78px;display:flex;align-items:center;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:10px;font-size:17px;font-weight:900;color:#071a34}
+.brand img{width:55px;height:55px;object-fit:contain}
+.brand b{color:#087d43;margin-left:4px}
+.site-header nav{display:flex;align-items:center;gap:24px;font-size:14px;font-weight:750}
+.site-header nav>a,.nav-dropdown>button{background:none;border:0;font:inherit;color:#102039;cursor:pointer;padding:0}
+.site-header nav>a:hover,.nav-dropdown>button:hover{color:#078244}
+.nav-dropdown{position:relative}
+.dropdown-menu{display:none;position:absolute;top:30px;left:-15px;width:270px;background:#fff;border:1px solid #e4eaf0;border-radius:14px;padding:9px;box-shadow:0 20px 50px rgba(4,20,40,.13);max-height:70vh;overflow:auto}
+.nav-dropdown:hover .dropdown-menu,.nav-dropdown.open .dropdown-menu{display:block}
+.dropdown-menu a{display:block;padding:10px 12px;border-radius:9px;font-size:13px}
+.dropdown-menu a:hover{background:#f0f8f4;color:#087d43}
+.nav-cta{background:#078244!important;color:#fff!important;padding:10px 17px;border-radius:10px}
+.menu-toggle{display:none;border:0;background:none;font-size:26px;cursor:pointer;color:#102039}
 
-  <!-- Small layout fixes on top of style.css -->
-  <style>
-    /* "Not sure" card spans two columns so the last row is full */
-    .cta-card{grid-column:span 2;background:#eaf7f0;border-color:#d7eadf}
-    .cta-card p{min-height:0}
-    .cta-card .btn{margin-top:auto;align-self:flex-start}
-    @media (max-width:900px){.cta-card{grid-column:span 2}}
-    @media (max-width:560px){
-      .cta-card{grid-column:auto}
-      /* Keep the floating WhatsApp button from covering the last content */
-      body{padding-bottom:70px}
-      .floating-wa{right:12px;bottom:12px;padding:10px 14px;font-size:13px}
-    }
-  </style>
+/* Hero */
+.hero{position:relative;overflow:hidden;background:linear-gradient(135deg,#061a35 0%,#0b294d 65%,#063e2a 100%);color:#fff;padding:80px 0 70px}
+.hero-glow{position:absolute;width:520px;height:520px;border-radius:50%;background:rgba(19,182,91,.13);filter:blur(30px);right:-180px;top:-150px}
+.hero-grid{position:relative;display:grid;grid-template-columns:1.05fr .95fr;gap:60px;align-items:center}
+.eyebrow{font-size:12px;letter-spacing:2.3px;font-weight:900;color:#13a85c;margin-bottom:12px}
+.hero .eyebrow{color:#6ff1a8}
+.hero h1{font-size:clamp(38px,5vw,66px);line-height:1.04;margin:0 0 20px;letter-spacing:-2px;max-width:700px}
+.hero-text{font-size:18px;color:#d6e1ee;max-width:620px}
+.hero-actions{display:flex;gap:13px;flex-wrap:wrap;margin:28px 0}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 21px;border-radius:10px;font-weight:850;font-size:14px;cursor:pointer;transition:transform .2s,background .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn-primary{background:#13a85c;color:#fff;box-shadow:0 10px 25px rgba(19,168,92,.25)}
+.btn-primary:hover{background:#0f9150}
+.btn-secondary{background:#fff;color:#0a1e38;border:1px solid #d5dee8}
+.btn-secondary:hover{background:#f3f7fa}
+.btn-outline{border:1px solid rgba(255,255,255,.35);color:#fff}
+.hero .btn-secondary{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.35)}
+.trust-row{display:flex;gap:18px;flex-wrap:wrap;font-size:12px;color:#d9e6f0}
+.logo-frame{background:#fff;border-radius:26px;padding:12px;box-shadow:0 25px 80px rgba(0,0,0,.28);transform:rotate(1deg)}
+.logo-frame img{display:block;width:100%;border-radius:18px}
 
-  <!-- LocalBusiness SEO Schema -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "NK RTO Services",
-    "url": "https://samuelmassey709-maker.github.io/nk-rto-services/",
-    "telephone": "+917069452259",
-    "email": "khangwaln@gmail.com",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Nikhil RTO Agent, Shop No-14, Plot No-50, Ward No-11/BJ, Gramin Bank, Sai Arcade, Opposite Hanuman Mandir, Bharat Nagar, Maheshwari Nagar",
-      "addressLocality": "Gandhidham",
-      "addressRegion": "Gujarat",
-      "postalCode": "370240",
-      "addressCountry": "IN"
-    },
-    "openingHours": "Mo-Su 11:00-21:00",
-    "hasMap": "https://share.google/nei4JFxTR4o9WKtnQ"
-  }
-  </script>
+/* Service strip */
+.service-strip{background:#fff;border-bottom:1px solid #e8edf2}
+.four-points{display:grid;grid-template-columns:repeat(4,1fr);padding:24px 0}
+.four-points>div{display:flex;align-items:center;justify-content:center;gap:12px;border-right:1px solid #e6ebef}
+.four-points>div:last-child{border-right:0}
+.four-points strong{font-size:25px}
+.four-points span{font-size:12px;font-weight:850;line-height:1.25;text-transform:uppercase;color:#24364e}
 
-  <!-- FAQ SEO Schema -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "Which RTO services do you provide?",
-        "acceptedAnswer": {"@type": "Answer", "text": "We provide assistance and guidance for driving licence and selected RTO documentation services listed on this website."}
-      },
-      {
-        "@type": "Question",
-        "name": "What documents will I need?",
-        "acceptedAnswer": {"@type": "Answer", "text": "Requirements vary by service and applicant. Contact us with your exact requirement so we can guide you on the applicable document checklist."}
-      },
-      {
-        "@type": "Question",
-        "name": "Are government fees included in your service charges?",
-        "acceptedAnswer": {"@type": "Answer", "text": "Any applicable official fees and our service charges should be confirmed before proceeding. We do not display unverified fee claims on this website."}
-      }
-    ]
-  }
-  </script>
-</head>
+/* Sections */
+.section{padding:85px 0}
+.section-head{text-align:center;max-width:720px;margin:0 auto 42px}
+.section h2{font-size:clamp(30px,4vw,46px);line-height:1.1;margin:0 0 13px;color:#0a1e38;letter-spacing:-1px}
+.section-head p{color:#667589}
 
-<body>
-<a class="skip-link" href="#home">Skip to content</a>
+/* Cards */
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.card{border:1px solid #e3e9ef;border-radius:18px;padding:25px;background:#fff;transition:.25s;box-shadow:0 8px 28px rgba(10,30,56,.04);display:flex;flex-direction:column}
+.card:hover{transform:translateY(-5px);box-shadow:0 18px 40px rgba(10,30,56,.10);border-color:#b9ddca}
+.card:target{border-color:#13a85c}
+.icon{display:grid;place-items:center;width:48px;height:48px;border-radius:13px;background:#edf8f2;font-size:23px;margin-bottom:17px}
+.card h3{font-size:18px;line-height:1.25;margin:0 0 9px}
+.card p{font-size:13px;color:#68778a;min-height:66px}
+.card>a:last-child{font-size:13px;font-weight:850;color:#087d43;margin-top:auto}
+.card .btn{margin-top:auto}
+.card .contact-line{font-size:15px;font-weight:700;color:#0a1e38;min-height:0;margin-top:12px}
 
-<header class="site-header">
-  <div class="container nav-wrap">
-    <a class="brand" href="#home" aria-label="NK RTO Services home">
-      <img src="assets/nk-rto-circular-logo.png" alt="NK RTO Services logo">
-      <span>NK <b>RTO SERVICES</b></span>
-    </a>
-    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="main-nav">☰</button>
-    <nav id="main-nav" aria-label="Main">
-      <a href="#home">Home</a>
-      <div class="nav-dropdown">
-        <button type="button" aria-expanded="false">Services ▾</button>
-        <div class="dropdown-menu">
-          <a href="#new-licence">New Driving Licence</a>
-          <a href="#renewal">Driving Licence Renewal</a>
-          <a href="#revalidation">Licence Revalidation</a>
-          <a href="#heavy">Heavy Driving Licence</a>
-          <a href="#idp">International Driving Permit</a>
-          <a href="#corrections">Name / DOB / Address Correction</a>
-          <a href="#mobile">Mobile Number Update</a>
-          <a href="#duplicate">Duplicate Driving Licence</a>
-          <a href="#learning-application">Learning Application</a>
-          <a href="#endorsement">Add Endorsement</a>
-        </div>
-      </div>
-      <a href="#about">About</a>
-      <a href="#how">How It Works</a>
-      <a href="#faq">FAQ</a>
-      <a href="#contact" class="nav-cta">Contact</a>
-    </nav>
-  </div>
-</header>
+/* Contact */
+.contact-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.contact-grid .card p:first-of-type{min-height:0}
 
-<main id="home">
-  <section class="hero">
-    <div class="hero-glow" aria-hidden="true"></div>
-    <div class="container hero-grid">
-      <div class="hero-copy">
-        <div class="eyebrow">FAST • RELIABLE • HASSLE FREE</div>
-        <h1>Driving Licence &amp; RTO Services Made Simple.</h1>
-        <p class="hero-text">Professional assistance for driving licence applications, renewals, updates, corrections and RTO documentation services.</p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="https://wa.me/917069452259?text=Hello%20NK%20RTO%20Services%2C%20I%20need%20RTO%20service%20assistance." target="_blank" rel="noopener">Get RTO Assistance</a>
-          <a class="btn btn-secondary" href="https://wa.me/917069452259?text=Hello%20NK%20RTO%20Services%2C%20I%20would%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener">Book an Appointment</a>
-        </div>
-        <div class="trust-row">
-          <span>✓ Clear Guidance</span><span>✓ Document Support</span><span>✓ Service Updates</span>
-        </div>
-      </div>
-      <div class="hero-visual">
-        <div class="logo-frame">
-          <img src="assets/nk-rto-wall-sign.png" alt="NK RTO Services premium wall sign">
-        </div>
-      </div>
-    </div>
-  </section>
+/* Dark section */
+.section-dark{background:#071c35;color:#fff}
+.section-dark h2{color:#fff}
+.section-dark p{color:#c8d5e2}
+.split{display:grid;grid-template-columns:1.2fr .8fr;gap:80px;align-items:center}
+.check-list{display:grid;gap:13px;list-style:none;padding:0;margin:0}
+.check-list li{padding:14px 16px;border:1px solid rgba(255,255,255,.13);border-radius:12px;background:rgba(255,255,255,.04)}
 
-  <section class="service-strip" aria-label="Service categories">
-    <div class="container four-points">
-      <div><strong aria-hidden="true">🪪</strong><span>Driving<br>Licence</span></div>
-      <div><strong aria-hidden="true">🚗</strong><span>Vehicle<br>Registration</span></div>
-      <div><strong aria-hidden="true">📄</strong><span>Document<br>Services</span></div>
-      <div><strong aria-hidden="true">🔄</strong><span>Renewal &amp;<br>Updates</span></div>
-    </div>
-  </section>
+/* Steps */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.steps>div{border-top:3px solid #13a85c;padding:22px;background:#f8fafb;border-radius:0 0 15px 15px}
+.steps b{font-size:13px;color:#078244}
+.steps h3{margin:9px 0 5px}
+.steps p{font-size:13px;color:#697789}
 
-  <section id="services" class="section">
-    <div class="container">
-      <div class="section-head">
-        <div class="eyebrow">OUR SERVICES</div>
-        <h2>RTO Services Under One Roof</h2>
-        <p>Choose the service you need and contact us for document guidance and application assistance.</p>
-      </div>
-      <div class="cards">
-        <article class="card" id="new-licence"><span class="icon" aria-hidden="true">🪪</span><h3>New Driving Licence</h3><p>Assistance and guidance for new driving licence requirements and documentation.</p><a href="#contact">Get Assistance →</a></article>
-        <article class="card" id="renewal"><span class="icon" aria-hidden="true">🔄</span><h3>Driving Licence Renewal</h3><p>Guidance for licence renewal requirements, documents and next steps.</p><a href="#contact">Get Assistance →</a></article>
-        <article class="card" id="revalidation"><span class="icon" aria-hidden="true">✓</span><h3>Licence Revalidation</h3><p>Support for revalidation-related documentation and application steps.</p><a href="#contact">Get Assistance →</a></article>
-        <article class="card" id="heavy"><span class="icon" aria-hidden="true">🚚</span><h3>Heavy Driving Licence</h3><p>Guidance for heavy vehicle licence requirements and documentation.</p><a href="#contact">Get Assistance →</a></article>
-        <article class="card" id="idp"><span class="icon" aria-hidden="true">🌍</span><h3>International Driving Permit</h3><p>Assistance with IDP-related documentation and application guidance.</p><a href="#contact">Get Assistance →</a></article>
-        <article class="card" id="corrections"><span class="icon" aria-hidden="true">✎</span><h3>Name / DOB / Address Correction</h3><p>Guidance for correcting eligible driving licence details and documents.</p><a href="#contact">Get Assistance →</a></article>
-        <article class="card" id="mobile"><span class="icon" aria-hidden="true">📱</span><h3>Mobile Number Update</h3><p>Assistance with eligible mobile-number update requirements.</p><a href="#contact">Get Assistance →</a></article>
-        <article class="card" id="duplicate"><span class="icon" aria-hidden="true">📋</span><h3>Duplicate Driving Licence</h3><p>Guidance for replacing a lost or damaged driving licence.</p><a href="#contact">Get Assistance →</a></article>
-        <article class="card" id="learning-application"><span class="icon" aria-hidden="true">📘</span><h3>Learning Application</h3><p>Assistance with learning licence application.</p><a href="#contact">Get Assistance →</a></article>
-        <article class="card" id="endorsement"><span class="icon" aria-hidden="true">🚛</span><h3>Add Endorsement</h3><p>Heavy vehicle and transport endorsement assistance.</p><a href="#contact">Get Assistance →</a></article>
-        <article class="card cta-card">
-          <span class="icon" aria-hidden="true">💬</span>
-          <h3>Not sure which service you need?</h3>
-          <p>Tell us your situation on WhatsApp and we will guide you to the right service.</p>
-          <a class="btn btn-primary" href="https://wa.me/917069452259?text=Hello%20NK%20RTO%20Services%2C%20I%20am%20not%20sure%20which%20service%20I%20need." target="_blank" rel="noopener">WhatsApp Us</a>
-        </article>
-      </div>
-    </div>
-  </section>
+/* FAQ */
+.faq-section{background:#f7f9fb}
+.narrow{max-width:850px}
+.faq-section details{background:#fff;border:1px solid #e1e7ed;border-radius:12px;padding:17px 20px;margin:12px 0}
+.faq-section summary{font-weight:800;cursor:pointer}
+.faq-section details p{color:#667589;margin-bottom:0}
 
-  <section id="about" class="section section-dark">
-    <div class="container split">
-      <div>
-        <div class="eyebrow">WHY NK RTO SERVICES</div>
-        <h2>Simple process. Clear communication.</h2>
-        <p>We help customers understand their RTO service requirements, prepare the relevant documents and navigate the next steps.</p>
-      </div>
-      <ul class="check-list">
-        <li>✓ Service-focused guidance</li>
-        <li>✓ Document checklist support</li>
-        <li>✓ Clear communication</li>
-        <li>✓ Easy WhatsApp enquiry</li>
-        <li>✓ Mobile-friendly service experience</li>
-      </ul>
-    </div>
-  </section>
+/* CTA */
+.cta-section{padding:60px 0;background:#eaf7f0}
+.cta-box{display:flex;align-items:center;justify-content:space-between;gap:25px;background:#fff;border:1px solid #d7eadf;border-radius:24px;padding:34px 38px;box-shadow:0 15px 40px rgba(10,50,30,.07)}
+.cta-box h2{margin:0 0 6px;font-size:34px}
+.cta-box p{margin:0;color:#667589}
 
-  <section id="how" class="section">
-    <div class="container">
-      <div class="section-head">
-        <div class="eyebrow">HOW IT WORKS</div>
-        <h2>Four Simple Steps</h2>
-      </div>
-      <div class="steps">
-        <div><b>01</b><h3>Contact Us</h3><p>Tell us which RTO service you need.</p></div>
-        <div><b>02</b><h3>Share Requirement</h3><p>We help identify the relevant documents and details.</p></div>
-        <div><b>03</b><h3>Application Assistance</h3><p>Get guidance for the next application steps.</p></div>
-        <div><b>04</b><h3>Next Steps</h3><p>Receive clear information about what to do next.</p></div>
-      </div>
-    </div>
-  </section>
+/* Footer */
+footer{background:#06162b;color:#d9e4ef;padding:55px 0 20px}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px}
+.footer-brand{display:flex;gap:15px;align-items:center}
+.footer-brand img{width:75px;height:75px;object-fit:contain;background:#fff;border-radius:50%}
+.footer-brand strong{color:#fff}
+.footer-brand p{margin:3px 0;color:#89d5ac;font-size:13px}
+.footer-grid h4{color:#fff;margin-top:0}
+.footer-grid>div>a{display:block;color:#b7c7d7;font-size:13px;margin:8px 0}
+.footer-grid>div>a:hover{color:#fff}
+.copyright{border-top:1px solid rgba(255,255,255,.1);margin-top:40px;padding-top:17px;font-size:12px;color:#8fa1b4}
 
-  <section id="faq" class="section faq-section">
-    <div class="container narrow">
-      <div class="section-head">
-        <div class="eyebrow">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-      </div>
-      <details><summary>Which RTO services do you provide?</summary><p>We provide assistance and guidance for driving licence and selected RTO documentation services listed on this website.</p></details>
-      <details><summary>What documents will I need?</summary><p>Requirements vary by service and applicant. Contact us with your exact requirement so we can guide you on the applicable document checklist.</p></details>
-      <details><summary>Are government fees included in your service charges?</summary><p>Any applicable official fees and our service charges should be confirmed before proceeding. We do not display unverified fee claims on this website.</p></details>
-    </div>
-  </section>
+/* Floating WhatsApp button */
+.floating-wa{position:fixed;right:18px;bottom:18px;z-index:60;background:#25d366;color:#fff;font-weight:800;font-size:14px;padding:12px 18px;border-radius:999px;box-shadow:0 10px 30px rgba(37,211,102,.35)}
+.floating-wa:hover{transform:translateY(-2px)}
 
-  <section id="contact" class="section">
-    <div class="container">
-      <div class="section-head">
-        <div class="eyebrow">CONTACT NK RTO SERVICES</div>
-        <h2>Get in Touch With Us</h2>
-        <p>For driving licence and RTO service assistance, contact us directly.</p>
-      </div>
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
 
-      <div class="contact-grid">
-        <div class="card">
-          <h3>📞 Phone &amp; WhatsApp</h3>
-          <p>Call or WhatsApp us for service assistance.</p>
-          <a class="btn btn-primary" href="https://wa.me/917069452259?text=Hello%20NK%20RTO%20Services%2C%20I%20need%20RTO%20service%20assistance." target="_blank" rel="noopener">WhatsApp Us</a>
-          <p class="contact-line"><a href="tel:+917069452259">+91 70694 52259</a></p>
-        </div>
+@media(max-width:1000px){
+  .contact-grid{grid-template-columns:repeat(2,1fr)}
+}
 
-        <div class="card">
-          <h3>✉️ Email Support</h3>
-          <p>For enquiries and service-related communication.</p>
-          <a class="contact-line" href="mailto:khangwaln@gmail.com">khangwaln@gmail.com</a>
-        </div>
+@media(max-width:900px){
+  .site-header nav{display:none}
+  .site-header nav.open{display:flex;position:absolute;top:78px;left:0;right:0;background:#fff;padding:16px 5%;flex-direction:column;align-items:stretch;border-bottom:1px solid #ddd;gap:14px;box-shadow:0 20px 40px rgba(4,20,40,.1)}
+  .menu-toggle{display:block}
+  .dropdown-menu{position:static;width:auto;box-shadow:none;border:0;display:none;padding-left:15px;max-height:none}
+  .nav-dropdown.open .dropdown-menu{display:block}
+  .nav-dropdown:hover .dropdown-menu{display:none}
+  .nav-dropdown.open:hover .dropdown-menu{display:block}
+  .hero-grid,.split{grid-template-columns:1fr}
+  .hero{padding-top:55px}
+  .cards{grid-template-columns:repeat(2,1fr)}
+  .steps{grid-template-columns:repeat(2,1fr)}
+  .four-points{grid-template-columns:repeat(2,1fr);gap:0}
+  .four-points>div{padding:15px;border-bottom:1px solid #e6ebef}
+  .four-points>div:nth-child(2){border-right:0}
+  .cta-box{flex-direction:column;align-items:flex-start}
+  .footer-grid{grid-template-columns:1fr 1fr}
+}
 
-        <div class="card">
-          <h3>📍 Office Address</h3>
-          <p>Nikhil RTO Agent, Shop No-14, Plot No-50, Ward No-11/BJ, Gramin Bank, Sai Arcade, Opposite Hanuman Mandir, Nearby Baroda, Bharat Nagar, Maheshwari Nagar, Gandhidham, Gujarat 370240</p>
-          <a class="btn btn-secondary" href="https://share.google/nei4JFxTR4o9WKtnQ" target="_blank" rel="noopener">Open Google Maps</a>
-        </div>
-
-        <div class="card">
-          <h3>🕐 Office Timing</h3>
-          <p>11:00 AM – 9:00 PM</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="appointment" class="cta-section">
-    <div class="container cta-box">
-      <div>
-        <div class="eyebrow">NEED RTO ASSISTANCE?</div>
-        <h2>Tell us what you need.</h2>
-        <p>Send your requirement on WhatsApp and get guidance on the next steps.</p>
-      </div>
-      <a class="btn btn-primary" href="https://wa.me/917069452259?text=Hello%20NK%20RTO%20Services%2C%20I%20need%20assistance." target="_blank" rel="noopener">WhatsApp Us</a>
-    </div>
-  </section>
-</main>
-
-<footer>
-  <div class="container footer-grid">
-    <div class="footer-brand">
-      <img src="assets/nk-rto-circular-logo.png" alt="NK RTO Services logo">
-      <div><strong>NK RTO SERVICES</strong><p>Driving Your Future</p></div>
-    </div>
-    <div>
-      <h4>Services</h4>
-      <a href="#new-licence">New Licence</a>
-      <a href="#renewal">Renewal</a>
-      <a href="#idp">International Permit</a>
-      <a href="#corrections">Corrections</a>
-    </div>
-    <div>
-      <h4>Connect</h4>
-      <a href="https://wa.me/917069452259" target="_blank" rel="noopener">WhatsApp</a>
-      <a href="tel:+917069452259">Call Office</a>
-      <a href="mailto:khangwaln@gmail.com">Email</a>
-    </div>
-  </div>
-  <div class="container copyright">© 2026 NK RTO Services. All rights reserved.</div>
-</footer>
-
-<a class="floating-wa" href="https://wa.me/917069452259?text=Hello%20NK%20RTO%20Services%2C%20I%20need%20assistance." target="_blank" rel="noopener" aria-label="Chat with NK RTO Services on WhatsApp">WhatsApp</a>
-
-<script>
-  (function () {
-    const toggle = document.querySelector('.menu-toggle');
-    const nav = document.querySelector('#main-nav');
-
-    toggle.addEventListener('click', () => {
-      const open = nav.classList.toggle('open');
-      toggle.setAttribute('aria-expanded', String(open));
-    });
-
-    // Mobile-friendly dropdown (hover does not work on touch screens)
-    const dropdown = document.querySelector('.nav-dropdown');
-    const dropBtn = dropdown.querySelector('button');
-    dropBtn.addEventListener('click', () => {
-      const open = dropdown.classList.toggle('open');
-      dropBtn.setAttribute('aria-expanded', String(open));
-    });
-
-    document.querySelectorAll('#main-nav a').forEach(a => a.addEventListener('click', () => {
-      nav.classList.remove('open');
-      toggle.setAttribute('aria-expanded', 'false');
-    }));
-
-    document.addEventListener('keydown', e => {
-      if (e.key === 'Escape') {
-        nav.classList.remove('open');
-        dropdown.classList.remove('open');
-      }
-    });
-  })();
-</script>
-</body>
-</html>
-                           
+@media(max-width:560px){
+  .brand span{display:none}
+  .hero h1{font-size:40px}
+  .hero-text{font-size:16px}
+  .cards,.steps,.footer-grid,.contact-grid{grid-template-columns:1fr}
+  .four-points{grid-template-columns:1fr 1fr}
+  .section{padding:60px 0}
+  .logo-frame{padding:7px}
+  .trust-row{gap:9px}
+  .cta-box{padding:26px}
+  .cta-box h2{font-size:28px}
+  .card p{min-height:0}
+}
